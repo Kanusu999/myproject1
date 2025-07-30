@@ -1,92 +1,27 @@
-<!-- 💖 LOVE BLOCK STARTS -->
-<section id="dear-pellama" style="padding: 60px 20px; background: #fff0f6;">
-  <h2 style="text-align: center; font-size: 32px; color: #d81b60; animation: glow 2s infinite alternate;">
-    💌 <span id="typewriter"></span>
+<!-- 🌅 Good Morning Message Start -->
+<section style="background: #ffe4ec; padding: 40px 20px; text-align: center;">
+  <h2 style="font-size: 30px; color: #e91e63; animation: pulse 1.5s infinite;">
+    💗 My dear pellama 💗
   </h2>
-
-  <p id="love-message" style="font-size: 20px; max-width: 800px; margin: 40px auto 20px; line-height: 2; color: #444; text-align: center;"></p>
-
-  <p style="text-align:center; font-style: italic; color: #555; margin-top: 50px;">
-    — Not just your Mama...<br>
-    <strong style="color:#4caf50; font-size: 22px;">Yours ni husband ni... forever & beyond 💍</strong>
+  <p style="font-size: 22px; color: #444; margin: 20px 0;">
+    🌞 Good Morning ra<br>
+    ❤️‍🔥 Love u 😘
   </p>
-
-  <!-- Music -->
-  <audio id="bgMusic" autoplay loop>
-    <source src="https://dl.sndup.net/mz9c/romantic-bg-melody.mp3" type="audio/mpeg">
-    Your browser does not support the audio tag.
-  </audio>
-
-  <div style="text-align:center; margin-top:25px;">
-    <button onclick="toggleMusic()" style="padding:12px 25px; background:#e91e63; color:white; border:none; border-radius:8px; font-size:16px; cursor:pointer;">
-      🎶 Toggle Music
-    </button>
-  </div>
+  <p style="font-size: 26px; color: crimson; font-weight: bold; animation: heartbeat 1.2s infinite;">
+    💓 You are my Heartbeat 💓
+  </p>
 </section>
 
 <style>
-@keyframes glow {
-  from {
-    text-shadow: 0 0 8px #f06292, 0 0 16px #f06292;
-  }
-  to {
-    text-shadow: 0 0 18px #f48fb1, 0 0 32px #f8bbd0;
-  }
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.2); }
+  75% { transform: scale(0.9); }
 }
 </style>
-
-<script>
-const heading = "MY DEAR PELLAMA 💖";
-let messageLines = [
-  "Love u raa ❤️",
-  "From the moment you came into my life...",
-  "Everything changed softly, beautifully...",
-  "You’re not just a part of my day...",
-  "You became my reason, my heartbeat... 💓",
-  "Nuvvu vacchina tarvata...",
-  "Nenu marchipoya frustration, pain anni...",
-  "Na life motham sparkle ayindi ra...✨",
-  "I know sometimes I don't deserve this love...",
-  "But you still chose me, trusted me...",
-  "That's not just love...",
-  "That's a miracle... and that miracle is YOU. 🙏",
-  "Every promise we made...",
-  "Every dream we saw...",
-  "I’ll make sure we reach them together. 💍",
-  "Not just now...",
-  "Forever and ever, I'm yours.",
-  "💚  Ni Mogudu ni... always."
-];
-
-let i = 0, j = 0;
-let currentLine = '';
-
-function type() {
-  const h = document.getElementById('typewriter');
-  const p = document.getElementById('love-message');
-
-  if (j < heading.length) {
-    h.textContent += heading.charAt(j);
-    j++;
-    setTimeout(type, 100);
-  } else {
-    if (i < messageLines.length) {
-      currentLine = messageLines[i];
-      p.innerHTML += currentLine + "<br><br>";
-      i++;
-      setTimeout(type, 800);
-    }
-  }
-}
-type();
-
-function toggleMusic() {
-  let music = document.getElementById("bgMusic");
-  if (music.paused) {
-    music.play();
-  } else {
-    music.pause();
-  }
-}
-</script>
-<!-- 💖 LOVE BLOCK ENDS -->
+<!-- 🌅 Good Morning Message End -->
